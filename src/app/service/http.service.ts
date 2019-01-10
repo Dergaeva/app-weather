@@ -9,7 +9,7 @@ export class HttpService {
   constructor(private http:HttpClient) {
   }
 
-  postData():Observable<Weather> {
+  postData():Observable<Weather[]> {
 
     const url = 'https://api2.climacell.co/v2/historical';
 
@@ -44,7 +44,6 @@ export class HttpService {
         }
       ]
     };
-    const response = this.http.post<any>(url, body, httpOptions);
-    return response;
+    return this.http.post<any>(url, body, httpOptions);
   }
 }

@@ -5,13 +5,16 @@ table, th, td {
   font: 14px Verdana;
   background: #dfe6ea;
 }
+
 th {
-  font-weight:bold;
+  font-weight: bold;
 }
+
 .center {
   margin: 20px auto;
   text-align: center;
 }
+
 h1 + p {
   text-align: justify;
 }

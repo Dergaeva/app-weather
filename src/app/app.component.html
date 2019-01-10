@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="center">The Cat in the Hat</h1>
+    <p>Mr.Cat, Mount Washington is the highest peak in the Northeastern United States at 6,288 ft (1,917 m) and the most prominent mountain east of the Mississippi River. It is famous for dangerously erratic weather.There was strong wind gust all day and the temperature was minus degrees. That's why our company recommended you take a warm clothes and don't go to this place without expert.<br>
+    </p>
+    <h4 class="center">Weather in  Mt. Washington, New Hampshire, USA on Mar-19th, 2018</h4>
+    </div>
+    <table class="table table-striped">
+      <tr>
+        <th>Observation time</th>
+        <th>Temp</th>
+        <th>Wind speed</th>
+        <th>Wind gust</th>
+      </tr>
+      <tr *ngFor="let weather of indicators">
+        <td>{{weather.observation_time.value}}</td>
+        <td>{{weather.temp.value + " " + weather.temp.units}}</td>
+        <td>{{weather.wind_speed.value + " " + weather.wind_speed.units}}</td>
+        <td>{{weather.wind_gust.value + " " + weather.wind_gust.units}}</td>
+      </tr>
+    </table>
+  </div>
+</div>

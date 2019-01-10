@@ -1,6 +1,6 @@
 
 # Angular + Climacell Api
->>>>>>> a1436f906c8fabc0d4406790b14ec63f2ab3e179
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7 and use Climacell Api.
 
